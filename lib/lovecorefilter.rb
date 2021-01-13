@@ -52,7 +52,7 @@ module LoveCoreFilter
 	end
 
 	def add_random_sticker(img,dirpath,size,comp_op)
-		sticker_file = Dir.new(dirpath).children.shuffle.first
+		sticker_file = Dir.children(dirpath).shuffle.first
 		sticker = Image.read("#{dirpath}#{sticker_file}").first
 		sticker.background_color = "none"
 
@@ -68,8 +68,8 @@ module LoveCoreFilter
 	end
 
 	def get_random_image(dirpath)
-		Dir.new(dirpath).children.shuffle
-		file = Dir.new(dirpath).children.shuffle.first
+		Dir.children(dirpath).shuffle
+		file = Dir.children(dirpath).shuffle.first
 		Image.read("#{dirpath}#{file}").first
 	end
 
