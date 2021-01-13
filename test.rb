@@ -29,6 +29,6 @@ puts "added frame"
 img = make_text(img,"no u can't make up missed clinicals\nwe aw so vewwy sowwy\nfuck u vewwy much i guess")
 puts "added text"
 img.display
-img.write('output/catboy.png')
+img.write('output/catboy.png')O
 exit
 
