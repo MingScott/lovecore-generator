@@ -38,6 +38,7 @@ GEM
       websocket
 
 PLATFORMS
+  arm-linux
   x86_64-linux
 
 DEPENDENCIES
